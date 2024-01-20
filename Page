@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <!-- Create Form -->
+    <form>
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" placeholder="Fill yourname">
+        </div>
+        <div class="form-control">
+            <label for="Email">Your email</label>
+            <input type="Text" name="Email" id="Email" placeholder="Fill Your Email">
+        </div>
+
+        <div class="form-control">
+            <label for="age">Your Age</label>
+            <input type="Number" name="Age" id="Age" placeholder="Fill Your name">
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Your role:
+            </label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="professor">Professor</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="recommand">
+                Would you like to recommand IT Club for your friends?
+            </label>
+            <br>
+            <label for="recommand-1">
+            <input type="radio" name="recommand" id="recommand-1">Yes</label>
+            <label for="recommand-2">
+            <input type="radio" name="recommand" id="recommand-2">Yes, Of course</label>
+            <label for="recommand-3">
+            <input type="radio" name="recommand" id="recommand-3">Yes, Of course</label>
+        </div>
+        <div class="form-control">
+            <label for="Comment">Describe yourself</label>
+            <br>
+            <textarea name="Comment" id="Comment"></textarea>
+        </div>
+        <!-- Create Button -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
+<style> 
+    body {
+        background-color: rgb(152, 154, 154);
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    form {
+        background-color: aliceblue;
+        max-width: 570px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgb(112, 190, 229);
+        resize: vertical;
+    }
+
+    .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    .form-control input,textarea,select {
+        border: 1px solid #fcccfc;
+        border-radius: 5px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        resize: vertical;
+    }
+    .form-control input[type="radio"] {
+        display: block;
+        width: auto;
+    }
+    
+</style>
